@@ -1,0 +1,21 @@
+[project]
+name = "terranio"
+version = "0.1.0"
+description = "Indexador del mejor contenido en español y VOSE, hecho para puristas y amantes del buen streaming."
+authors = [
+    { name = "Jorge B. | Noob In The Net", email = "noobinthenet@proton.me" },
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "sanic[ext] (>=24.12.0,<25.0.0)",
+    "libtorrent (>=2.0.11,<3.0.0)",
+]
+
+[tool.poetry]
+packages = [{ include = "terranio", from = "src" }]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
